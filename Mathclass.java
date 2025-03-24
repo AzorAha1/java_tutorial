@@ -36,5 +36,8 @@ public class Mathclass {
 
         //volume of a sphere
         System.out.println("The volume of the sphere is: " + ((4/3) * Math.PI * Math.pow(radius, 3)) + " cm^3");
+
+
+        myScanner.close();
     }
 }
