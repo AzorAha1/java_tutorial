@@ -4,11 +4,17 @@ public class userinput {
         Scanner myScanner = new Scanner(System.in);
         System.out.println("Hey There what is your name ?");
         String name = myScanner.nextLine();
-
+        
+        if (name.isEmpty()) {
+            System.out.println("You did not enter a name");
+            System.exit(0);
+        }
         System.out.println("Hello " + name + " " + "it is nice to meet you !");
 
         System.out.println("Are you feeling good today(1. Yes 2. No)");
         int feeling = myScanner.nextInt();
+
+
 
         if (feeling == 1) {
             System.out.println("I glad to hear that");
@@ -16,11 +22,17 @@ public class userinput {
         else if (feeling == 2) {
             System.out.println("Oh im very sorry to hear that");
         }
+        else {
+            System.out.println("Damn you dont want to talk to me ?");
+        }
 
         System.out.println("So how old are you ?");
 
         int age = myScanner.nextInt();
-
+        if (age < 0) {
+            System.out.println("You are not born yet");
+            System.exit(0);
+        }
         if (age <= 12) {
             System.out.println("oh you are still a baby !");
         } 
