@@ -20,11 +20,11 @@ public class weightconverter {
         if (currentweightunit == 1 && choice == 2) {
             System.out.println("Your weight is in kilograms and you wish to convert to pounds");
             convertedweight = weight * 2.20462;
-            System.out.println("Your weight in pounds is: " + convertedweight);
+            System.out.printf("Your weight in pounds is: %.2flbs", convertedweight);
         } else if (currentweightunit == 2 && choice == 1) {
             System.out.println("Your weight is in pounds and you wish to convert to kilograms");
             convertedweight = weight / 2.20462;
-            System.out.println("Your weight in kilograms is: " + convertedweight);
+            System.out.printf("You weight in kilograms is %.2fKg", convertedweight);
         
         } else if (currentweightunit == 1 && choice == 1){
             System.out.println("Your Weight is Already in Kilogram!");
