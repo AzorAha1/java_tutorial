@@ -6,6 +6,6 @@ public class Houses {
     String ruler;
 
     public void printout() {
-        System.out.printf("House Name is %s, the motto is %s, region is %s and Sigil is a %s and current ruler is %s", houseName, motto,region, Sigil, ruler);
+        System.out.printf("House Name is %s, the motto is %s, region is %s and Sigil is a %s and current ruler is %s\n", houseName, motto,region, Sigil, ruler);
     }
 }
