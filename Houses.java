@@ -5,7 +5,22 @@ public class Houses {
     String Sigil;
     String ruler;
 
-    public void printout() {
-        System.out.printf("House Name is %s, the motto is %s, region is %s and Sigil is a %s and current ruler is %s\n", houseName, motto,region, Sigil, ruler);
+    //constructor
+    public Houses(String houseName, String motto, String region, String Sigil, String ruler) {
+        //first constructor
+        this.Sigil = Sigil;
+        this.houseName = houseName;
+        this.motto = motto;
+        this.region = region;
+        this.ruler = ruler;
     }
+    // method to print the details of the house
+    public void printDetails() {
+        System.out.println("House Name: " + houseName);
+        System.out.println("Motto: " + motto);
+        System.out.println("Region: " + region);
+        System.out.println("Sigil: " + Sigil);
+        System.out.println("Ruler: " + ruler);
+    }
+    
 }
