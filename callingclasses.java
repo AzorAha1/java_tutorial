@@ -9,7 +9,7 @@ public class callingclasses {
         Houses martell = new Houses("Martell", "Unbowed, Unbent, Unbroken", "Dorne", "A Sun Piercer", "Doran Martell\n\n");
         Houses tyrell = new Houses("Tyrell", "Growing Strong", "The Reach", "A Rose", "Mace Tyrell\n\n");
         Houses arryn = new Houses("Arryn", "As High as Honor", "The Vale", "A Falcon", "Jon Arryn\n\n");
-        Houses targaryen2 = new Houses("Targaryen", "Fire and Blood", "Essos", "A Dragon", "Aegon Targaryen");
+        Houses targaryen2 = new Houses("Targaryen", "Fire and Blood", "Essos", "A Dragon", "Aegon Targaryen\n\n");
 
         stark.printDetails();
         lannister.printDetails();
@@ -20,6 +20,14 @@ public class callingclasses {
         tyrell.printDetails();
         arryn.printDetails();
         targaryen2.printDetails(); 
+
+        Animal cat = new Cat();
+        Animal dog = new Dog();
+        Animal randomanimal = new Animal();
+        cat.makeSound();
+        dog.makeSound();
+        randomanimal.makeSound();
     }
+
 
 }
